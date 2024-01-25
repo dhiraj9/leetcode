@@ -6,14 +6,17 @@
 #         self.right = right
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            return 0
         q = collections.deque([root])
-        c = -1
+        c = 0
         while q:
-            c = c + 1
             for i in range(len(q)):
                 n = q.popleft()
-                if n:
+                if n.left:
                     q.append(n.left)
+                if n.right:
                     q.append(n.right)
+            c = c + 1
         return c
 
