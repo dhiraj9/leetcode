@@ -10,7 +10,7 @@ class Solution {
                 if (buy == 0) profit = Math.max(-prices[ind] + ahead[1], ahead[0]);
                 cur[buy] = profit;
             }
-            ahead = Arrays.copyOfRange(cur, 0, 2);
+            ahead = cur;
         }
         return cur[0];
     }
