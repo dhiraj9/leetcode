@@ -1,15 +1,15 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        a = {')': '(', ']': '[', '}': '{'}
-        b = []
+        stack = []
+        dictionary = {')': '(', '}': '{', ']': '['}
         for i in s:
-            if i in a.values():
-                b.append(i)
+            if i in dictionary.values():
+                stack.append(i)
             else:
-                if b:
-                    if b.pop() != a[i]:
+                if stack:
+                    if stack.pop() != dictionary[i]:
                         return False
                 else:
                     return False
-        return not b
+        return len(stack) == 0
 
