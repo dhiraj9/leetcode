@@ -3,6 +3,6 @@ class Solution:
         a = Counter(ransomNote)
         b = Counter(magazine)
         for i, j in a.items():
-            if j > b[i]:
-                return False
+            if b[i] < j: return False
         return True
+
