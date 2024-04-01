@@ -3,22 +3,20 @@ class Solution:
         preMap = {i: [] for i in range(numCourses)}
         for crs, pre in prerequisites:
             preMap[crs].append(pre)
-        visit = set()
-        def dfs(node):
-            if node in visit:
+        visitSet = set()
+        def dfs(crs):
+            if crs in visitSet:
                 return False
-            if preMap[node] == []:
+            if preMap[crs] == []:
                 return True
-            visit.add(node)
-            for pre in preMap[node]:
+            visitSet.add(crs)
+            for pre in preMap[crs]:
                 if not dfs(pre):
                     return False
-            visit.remove(node)
-            preMap[node] = []
+            visitSet.remove(crs)
+            preMap[crs] = []
             return True
-        for node in range(numCourses):
-            if not dfs(node):
+        for crs in range(numCourses):
+            if not dfs(crs):
                 return False
         return True
-
-
