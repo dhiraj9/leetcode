@@ -1,21 +1,21 @@
 class MyQueue:
 
     def __init__(self):
-        self.s1 = []
-        self.s2 = []
+        self.a, self.b = [], []
 
     def push(self, x: int) -> None:
-        while self.s1:
-            self.s2.append(self.s1.pop())
-        self.s1.append(x)
-        while self.s2:
-            self.s1.append(self.s2.pop())
+        while self.a:
+            self.b.append(self.a.pop())
+        self.a.append(x)
+        while self.b:
+            self.a.append(self.b.pop())
 
     def pop(self) -> int:
-        return self.s1.pop()
-    
+        return self.a.pop()
+
     def peek(self) -> int:
-        return self.s1[-1]
+        return self.a[-1]
 
     def empty(self) -> bool:
-        return len(self.s1) == 0
+        return len(self.a) == 0
+
