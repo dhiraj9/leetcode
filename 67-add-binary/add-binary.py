@@ -1,18 +1,22 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        a, b = a[::-1], b[::-1]
-        c, d = 0, 0
-        for i, j in enumerate(a):
-            c += 2**i * int(j)
+        if a == '0' and b == '0':
+            return "0"
+        a = a[::-1]
+        c = 0
+        d = 0
+        for i in a:
+            c += int(i) * 2 ** d
+            d += 1
+        b = b[::-1]
+        e = 0
         for i, j in enumerate(b):
-            d += 2**i * int(j)
-        e = c + d
-        if not e: return "0"
+            e += int(j) * 2 ** i
+        c = c + e
         f = ""
-        while e:
-            f += str(e % 2)
-            e = e // 2
+        while c > 0:
+            f += str(c % 2)
+            c //= 2
         return f[::-1]
-
 
 
