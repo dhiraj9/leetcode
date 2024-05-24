@@ -1,12 +1,15 @@
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        a = [0]
-        def dfs(root):
-            if not root:
-                return 0
-            left, right = dfs(root.left), dfs(root.right)
-            b = 1 + max(left, right)
-            a[0] = max(a[0], b)
-            return b
-        dfs(root)
-        return a[0]
+        if not root:
+            return 0
+        level = 0
+        q = deque([root])
+        while q:
+            for i in range(len(q)):
+                node = q.popleft()
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            level = level + 1
+        return level
