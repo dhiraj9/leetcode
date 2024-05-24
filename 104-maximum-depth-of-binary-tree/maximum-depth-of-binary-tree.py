@@ -1,18 +1,12 @@
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        res = [0]
+        a = [0]
         def dfs(root):
             if not root:
                 return 0
-            left = dfs(root.left)
-            right = dfs(root.right)
-            res[0] = max(1 + max(left, right), res[0])
-            return 1 + max(left, right)
+            left, right = dfs(root.left), dfs(root.right)
+            b = 1 + max(left, right)
+            a[0] = max(a[0], b)
+            return b
         dfs(root)
-        return res[0]
-
+        return a[0]
