@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/dhiraj9/leetcode/tree/master/0001-two-sum) |
+| [0036-valid-sudoku](https://github.com/dhiraj9/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/dhiraj9/leetcode/tree/master/0049-group-anagrams) |
 | [0238-product-of-array-except-self](https://github.com/dhiraj9/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/dhiraj9/leetcode/tree/master/0347-top-k-frequent-elements) |
@@ -12,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/dhiraj9/leetcode/tree/master/0001-two-sum) |
+| [0036-valid-sudoku](https://github.com/dhiraj9/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/dhiraj9/leetcode/tree/master/0049-group-anagrams) |
 | [0347-top-k-frequent-elements](https://github.com/dhiraj9/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## String
@@ -47,4 +49,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/dhiraj9/leetcode/tree/master/0238-product-of-array-except-self) |
+## Matrix
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/dhiraj9/leetcode/tree/master/0036-valid-sudoku) |
 <!---LeetCode Topics End-->
