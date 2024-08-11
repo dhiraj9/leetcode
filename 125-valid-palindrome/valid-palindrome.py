@@ -5,4 +5,4 @@ class Solution:
         for i in s:
             if i.isalnum():
                 a += i
-        return a == a[::-1]    
+        return a == a[::-1]
