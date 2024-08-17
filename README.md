@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/dhiraj9/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0792-binary-search](https://github.com/dhiraj9/leetcode/tree/master/0792-binary-search) |
 | [0883-car-fleet](https://github.com/dhiraj9/leetcode/tree/master/0883-car-fleet) |
+| [0907-koko-eating-bananas](https://github.com/dhiraj9/leetcode/tree/master/0907-koko-eating-bananas) |
 ## Hash Table
 |  |
 | ------- |
@@ -85,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/dhiraj9/leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dhiraj9/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0792-binary-search](https://github.com/dhiraj9/leetcode/tree/master/0792-binary-search) |
+| [0907-koko-eating-bananas](https://github.com/dhiraj9/leetcode/tree/master/0907-koko-eating-bananas) |
 ## Greedy
 |  |
 | ------- |
